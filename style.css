@@ -1,0 +1,249 @@
+/* Reset e stili di base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e9ecef;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Link */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header e Navbar */
+header {
+  background: linear-gradient(45deg, #34495e, #2ecc71);
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #f1c40f;
+}
+
+/* Sezione Hero */
+.hero {
+  background-image: url('https://via.placeholder.com/1200x600');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #27ae60;
+}
+
+/* Sezione Features */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.feature-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.feature-card h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #34495e;
+}
+
+/* Sezione Case */
+.houses-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.house-card {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 370px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.house-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.house-card h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #34495e;
+}
+
+.house-card p {
+  margin: 1rem 0;
+  line-height: 1.4;
+}
+
+.house-card h3 {
+  margin: 1rem 0 0.5rem;
+  color: #27ae60;
+}
+
+.house-card ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Sezione Form (Prenotazione, Contatto) */
+.booking-form-section,
+.contact-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.booking-form-section h2,
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #34495e;
+}
+
+.booking-form label,
+.contact-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #34495e;
+}
+
+.booking-form input,
+.booking-form select,
+.contact-form input,
+contact-form textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.65rem;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.booking-form textarea,
+.contact-form textarea {
+  resize: vertical;
+}
+
+.booking-form button,
+.contact-form button {
+  margin-top: 1.5rem;
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.booking-form button:hover,
+.contact-form button:hover {
+  background-color: #27ae60;
+}
+
+/* Messaggio di conferma prenotazione */
+.booking-confirmation {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+/* Sezione Contatti */
+.contact-section .contact-info {
+  margin-bottom: 2rem;
+}
+
+.contact-section .contact-info p {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #34495e;
+  color: #fff;
+  margin-top: 2rem;
+}

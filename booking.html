@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SteLuRe - Prenotazione</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header e Navbar -->
+  <header>
+    <h1>Prenota la tua Vacanza</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="houses.html">Le Case</a></li>
+        <li><a href="booking.html" class="active">Prenota</a></li>
+        <li><a href="contact.html">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sezione Prenotazione -->
+  <section class="booking-form-section">
+    <h2>Modulo di Prenotazione</h2>
+    <form class="booking-form" id="bookingForm">
+      <!-- Selezione Casa -->
+      <label for="house">Seleziona la Casa-Vacanze</label>
+      <select id="house" name="house" required>
+        <option value="">-- Scegli la Casa --</option>
+        <option value="SteLuRe">SteLuRe (Aradeo)</option>
+        <option value="Don Giovanni">Don Giovanni (Lecce)</option>
+        <option value="Casa via Fornolaro">Casa via Fornolaro (Work in progress)</option>
+      </select>
+
+      <!-- Selezione Stanza -->
+      <label for="roomType">Tipo di Stanza</label>
+      <select id="roomType" name="roomType" required>
+        <option value="">-- Scegli la Stanza --</option>
+        <option value="Standard">Stanza Standard</option>
+        <option value="Deluxe">Stanza Deluxe</option>
+        <option value="Suite Familiare">Suite Familiare</option>
+      </select>
+
+      <!-- Date -->
+      <label for="checkIn">Data di Arrivo</label>
+      <input type="date" id="checkIn" name="checkIn" required />
+
+      <label for="checkOut">Data di Partenza</label>
+      <input type="date" id="checkOut" name="checkOut" required />
+
+      <!-- Numero di Ospiti -->
+      <label for="guests">Numero di Ospiti</label>
+      <input type="number" id="guests" name="guests" min="1" max="10" required />
+
+      <!-- Dati Personali -->
+      <label for="name">Nome e Cognome</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Telefono</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <button type="submit" class="cta-button">Invia Prenotazione</button>
+    </form>
+  </section>
+
+  <!-- Sezione di conferma -->
+  <section class="booking-confirmation" id="bookingConfirmation" style="display: none;">
+    <h2>Prenotazione Effettuata!</h2>
+    <p>Grazie per aver prenotato con noi. Ti contatteremo a breve per confermare i dettagli.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SteLuRe. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
