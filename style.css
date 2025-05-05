@@ -48,29 +48,13 @@ nav a.active {
 }
 
 /* Sezione Hero */
-.hero {
-  background-image: url('https://via.placeholder.com/1200x600');
-  background-size: cover;
-  background-position: center;
-  padding: 4rem 2rem;
-  text-align: center;
-  color: #fff;
-}
 
-.hero-text {
-  max-width: 600px;
-  margin: 0 auto;
-}
 
-.hero-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
 
-.hero-text p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
+
+
+
+
 
 .cta-button {
   display: inline-block;
@@ -246,4 +230,41 @@ footer {
   background-color: #34495e;
   color: #fff;
   margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.hero {
+  background-color: var(--bg-main); /* sfondo grigio chiarissimo */
+  padding: 5rem 2rem;
+  text-align: center;
+  color: var(--brand-accent-dark);
+}
+
+.hero-text {
+  max-width: 700px;
+  margin: auto;
+  font-style: italic;
+}
+
+.hero-text h2 {
+  font-size: 2.75rem;
+  margin-bottom: 1.2rem;
+  color: var(--brand-accent-dark);
+  font-style: italic;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: var(--brand-accent-dark);
+  font-style: italic;
 }
